@@ -1,4 +1,6 @@
 import '../../index.css';
+import logo from '../../assets/logo.png';
+import landingBanner from '../../assets/landingBanner.png';
 function LandingPage() {
 
   return (
@@ -8,7 +10,7 @@ function LandingPage() {
         {/* Top bar */}
         <div className="flex justify-between items-center flex-wrap gap-4 mb-6 w-full">
           <div className="flex items-center gap-4">
-            <img src="src/assets/logo.png" className="h-10" />
+            <img src={logo} className="h-10" alt="Logo"/>
             <span className="text-xl font-semibold">SoulNote</span>
           </div>
           <div className="flex gap-6">
@@ -42,7 +44,7 @@ function LandingPage() {
             </p>
           </div>
           <div className="w-full md:w-[48%]">
-            <img src="src/assets/landingBanner.png" className="w-full h-auto object-cover rounded-md" />
+            <img src={landingBanner} className="w-full h-auto object-cover rounded-md" />
           </div>
         </div>
 
